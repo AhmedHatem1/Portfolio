@@ -8,13 +8,17 @@ import { ServiceItemComponent } from './service-list/service-item/service-item.c
 import { ProcessListComponent } from './process-list/process-list.component';
 import { ProcessItemComponent } from './process-list/process-item/process-item.component';
 import { ContactComponent } from './contact/contact.component';
+import { HomeComponent } from './home.component';
 
 
 
 @NgModule({
-  declarations: [AboutComponent, AboutInfoComponent, AboutProfileComponent, ServiceListComponent, ServiceItemComponent, ProcessListComponent, ProcessItemComponent, ContactComponent],
+  declarations: [AboutComponent, AboutInfoComponent, AboutProfileComponent, ServiceListComponent, ServiceItemComponent, ProcessListComponent, ProcessItemComponent, ContactComponent, HomeComponent],
   imports: [
     CommonModule
+  ],
+  exports: [
+    HomeComponent
   ]
 })
 export class HomeModule { }
