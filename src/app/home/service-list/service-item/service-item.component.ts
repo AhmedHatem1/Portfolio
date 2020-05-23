@@ -7,9 +7,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ServiceItemComponent implements OnInit {
   @Input() isOdd;
-  ngOnChanges(): void {
-    console.log('sss', this.isOdd)
-  }
+  @Input() item;
+
   constructor() { }
 
   ngOnInit() {

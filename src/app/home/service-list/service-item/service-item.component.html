@@ -5,15 +5,13 @@
         </div>
     </div>
     <div class="col-md-6">
-        <span class="main-color slogan">Understand. together.</span>
+        <span class="main-color slogan">{{item.slogan}}</span>
         <h2>
-            <strong>Data</strong>Visualization
+            <strong>{{item.title1}}</strong>{{item.title2}}
         </h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, mollitia earum eos nemo
-            dolore dicta consequatur est aliquam, molestiae ullam distinctio quam natus. Ipsa omnis
-            corrupti similique exercitationem, ea eaque.</p>
+        <p>{{item.description}}</p>
         <div class="btns my-5">
-            <button class="btn btn-primary mr-4">Let's create</button>
+            <a class="btn btn-primary mr-4" [href]="item.createLink">Let's create</a>
             <button class="btn btn-sucess shadow-red">Get in touch</button>
         </div>
     </div>

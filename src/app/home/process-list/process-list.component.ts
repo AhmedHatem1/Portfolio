@@ -1,3 +1,5 @@
+import { Process } from './../../core/models/process';
+import { ProcessService } from './../../core/services/process/process.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./process-list.component.scss']
 })
 export class ProcessListComponent implements OnInit {
-  list = [1, 2, 3, 4, 5, 6];
-  constructor() { }
+  list: Process;
+  constructor(private processService: ProcessService) { }
 
   ngOnInit() {
+    this.processService.getProcess().subscribe((res: Process) => {
+      this.list = res;
+    })
   }
 
 }

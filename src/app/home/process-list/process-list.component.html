@@ -9,7 +9,7 @@
         <div class="process-list">
             <div class="row">
                 <div class="col-md-4 mb-5" *ngFor="let item of list;let i = index">
-                    <app-process-item [index]='i'></app-process-item>
+                    <app-process-item [index]='i' [item]="item"></app-process-item>
                 </div>
             </div>
         </div>

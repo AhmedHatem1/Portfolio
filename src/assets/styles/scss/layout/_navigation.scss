@@ -1,4 +1,24 @@
-nav
+header
 {
-    position: fixed;
+    background-color: #F9F9F9;
+    .bar{
+        width:30px;
+        background-color: #000;
+        height: 2px;
+        display: block;
+        margin-bottom: 5px;
+        text-align: right;
+    }
+    .bar:nth-child(2){
+        width:20px;
+    }
+    .bar:nth-child(3){
+        width:10px;
+    }
 }
+
+@media (max-width: 768px) { 
+    header{
+        margin-bottom: 200px;
+    }
+ }

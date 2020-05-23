@@ -17,3 +17,13 @@
 .main-color{
     color:$main-color1;
 }
+
+.has-error{
+    color:red;
+    font-size: 1.5em;
+}
+
+.avoid-click {
+    pointer-events: none;
+    cursor: not-allowed;
+  }

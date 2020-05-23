@@ -1,0 +1,23 @@
+[
+    {
+        "slogan": "Innovate. together.",
+        "title1": "UX",
+        "title2": "Design",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, mollitia earum eos nemo dolore dicta consequatur est aliquam, molestiae ullam distinctio quam natus. Ipsa omnis corrupti similique exercitationem, ea eaque.",
+        "createLink": "https://www.google.com"
+    },
+    {
+        "slogan": "Understand. together.",
+        "title1": "Data",
+        "title2": "Visualization",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, mollitia earum eos nemo dolore dicta consequatur est aliquam, molestiae ullam distinctio quam natus. Ipsa omnis corrupti similique exercitationem, ea eaque.",
+        "createLink": "https://www.google.com"
+    },
+    {
+        "slogan": "Create. together.",
+        "title1": "Front",
+        "title2": "Dev",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, mollitia earum eos nemo dolore dicta consequatur est aliquam, molestiae ullam distinctio quam natus. Ipsa omnis corrupti similique exercitationem, ea eaque.",
+        "createLink": "https://www.google.com"
+    }
+]

@@ -15,9 +15,13 @@ export class HttpService {
 
   // unit all requests and handling the errors dynamically with toaster message
   callRequest(method: (ApiMethods | string), api: string, options?: any) {
-
-
-    let baseServer = 'https://example.com/api/';
+    let baseServer;
+    if (api.includes('json')) {
+      baseServer = "./assets/Api/"
+    }
+    else {
+      baseServer = 'https://example.com/api/';
+    }
 
     let response;
     switch (method) {

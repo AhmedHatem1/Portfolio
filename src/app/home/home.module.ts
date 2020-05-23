@@ -10,6 +10,7 @@ import { ProcessListComponent } from './process-list/process-list.component';
 import { ProcessItemComponent } from './process-list/process-item/process-item.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -17,7 +18,8 @@ import { HomeComponent } from './home.component';
   declarations: [AboutComponent, AboutInfoComponent, AboutProfileComponent, ServiceListComponent, ServiceItemComponent, ProcessListComponent, ProcessItemComponent, ContactComponent, HomeComponent],
   imports: [
     CommonModule,
-    SharedModule
+    SharedModule,
+    ReactiveFormsModule
   ],
   exports: [
     HomeComponent

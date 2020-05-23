@@ -14,30 +14,52 @@
             </div>
 
             <div class="col-md-6">
-                <form>
+                <form [formGroup]='form' (ngSubmit)="onSubmit()">
                     <div class='form-group'>
                         <label for="name">Let's meet . What's your name ? </label>
-                        <input type="text" name="name" id='name' class="form-control form-control-lg">
+                        <input type="text" name="name" formControlName="name" id='name'
+                            class="form-control form-control-lg">
+                        <span class='has-error' *ngIf="name.errors?.required && name.touched">
+                            this field is required
+                        </span>
                     </div>
                     <div class='form-group'>
                         <label for="email">and your mail ...</label>
-                        <input type="email" name="email" id='email' class="form-control form-control-lg">
+                        <input type="email" name="email" formControlName="email" id='email'
+                            class="form-control form-control-lg">
+                        <span class='has-error' *ngIf="email.errors?.required && email.touched">
+                            this field is required
+                        </span>
+
+                        <span class='has-error' *ngIf="email.errors?.email && email.touched">
+                            Please write your email in a correct way
+                        </span>
+
                     </div>
                     <div class="form-row">
                         <div class="col-md-6">
                             <div class='form-group'>
                                 <label for="service">How can I help you ? </label>
-                                <select name="service" id='service' class="form-control form-control-lg">
+                                <select name="service" id='service' formControlName="service"
+                                    class="form-control form-control-lg">
                                     <option value="app-design">App design</option>
-                                </select> </div>
+                                </select>
+                                <span class='has-error' *ngIf="service.errors?.required && service.touched">
+                                    this field is required
+                                </span>
+                            </div>
                         </div>
 
                         <div class="col-md-6">
                             <div class='form-group'>
                                 <label for="priority">What's the priority ?</label>
-                                <select name="priority" id='priority' class="form-control form-control-lg">
+                                <select name="priority" id='priority' formControlName="priority"
+                                    class="form-control form-control-lg">
                                     <option value="we-have-time">We have time</option>
                                 </select>
+                                <span class='has-error' *ngIf="priority.errors?.required && priority.touched">
+                                    this field is required
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -45,9 +67,14 @@
                     <div class='form-group'>
                         <label for="about-project">Tell me about your project </label>
                         <textarea placeholder="Budget, extra details, deadlines,special requirements"
-                            name="about-project" id='about-project' class="form-control form-control-lg"></textarea>
+                            formControlName="about-project" name="about-project" id='about-project'
+                            class="form-control form-control-lg"></textarea>
+                        <span class='has-error' *ngIf="aboutProject.errors?.required && aboutProject.touched">
+                            this field is required
+                        </span>
                     </div>
-                    <button class="btn btn-primary my-4">Let's Work</button>
+                    <button class="btn btn-primary my-4" [disabled]="form.invalid"
+                        [class.avoid-click]="form.invalid">Let's Work</button>
 
                 </form>
             </div>
