@@ -1,3 +1,4 @@
+import { SharedModule } from './../shared/shared.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AboutComponent } from './about/about.component';
@@ -15,7 +16,8 @@ import { HomeComponent } from './home.component';
 @NgModule({
   declarations: [AboutComponent, AboutInfoComponent, AboutProfileComponent, ServiceListComponent, ServiceItemComponent, ProcessListComponent, ProcessItemComponent, ContactComponent, HomeComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    SharedModule
   ],
   exports: [
     HomeComponent

@@ -1,1 +1,18 @@
-<p>process-list works!</p>
+<section class="process">
+    <div class="text-center mb-4">
+        <span class="main-color slogan">Research. Together.</span>
+        <h2>
+            <strong>Creation</strong>Process
+        </h2>
+    </div>
+    <div class="container">
+        <div class="process-list">
+            <div class="row">
+                <div class="col-md-4 mb-5" *ngFor="let item of list;let i = index">
+                    <app-process-item [index]='i'></app-process-item>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>

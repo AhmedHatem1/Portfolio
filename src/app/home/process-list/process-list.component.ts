@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./process-list.component.scss']
 })
 export class ProcessListComponent implements OnInit {
-
+  list = [1, 2, 3, 4, 5, 6];
   constructor() { }
 
   ngOnInit() {

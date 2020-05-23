@@ -9,8 +9,8 @@ import { ToastrModule } from 'ngx-toastr';
   declarations: [SocialMediaComponent],
   imports: [
     CommonModule,
-    ToastrModule.forRoot(),
-
-  ]
+    ToastrModule.forRoot()
+  ],
+  exports: [SocialMediaComponent]
 })
 export class SharedModule { }

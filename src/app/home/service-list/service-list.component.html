@@ -1,1 +1,5 @@
-<p>service-list works!</p>
+<section class="services">
+    <div class="container">
+        <app-service-item *ngFor='let item of list;let isOdd = odd' [isOdd]="isOdd"></app-service-item>
+    </div>
+</section>

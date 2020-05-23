@@ -1,0 +1,19 @@
+.seperator{
+    width:60px;
+    height:3px;
+    background: $main-gradient;
+    margin: 1.5em 0;
+}
+
+.shadow{
+    box-shadow: 10px 10px 30px rgba(24,24,24,.05), -10px -10px 30px #f9f9f9;
+}
+
+.shadow-red{
+    box-shadow: 10px 10px 15px rgba(219,63,87,.08), -10px -10px 30px #f9f9f9 !important;
+}
+
+
+.main-color{
+    color:$main-color1;
+}

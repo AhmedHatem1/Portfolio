@@ -1,0 +1,32 @@
+.btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    border:none;
+    outline: none;
+    min-width:150px;
+    margin:10px 0;
+    font-size: 1.4em;
+    &:focus , &:active, &:focus{
+        outline: 0;
+        box-shadow: none !important
+    }
+    &-primary
+    {
+        background: $main-gradient;
+        @extend .btn-rounded;
+    }
+
+    &-sucess
+    {
+        background: #FFF;
+        color:$main-color1 ;
+        @extend .btn-rounded;
+        @extend .btn-shadow;
+    }
+    &-shadow{
+        box-shadow: 10px 10px 30px rgba(24,24,24,.05), -10px -10px 30px #f9f9f9;
+    }    
+    &-rounded{
+        border-radius: 50px;
+    }
+}

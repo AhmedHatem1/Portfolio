@@ -1,0 +1,25 @@
+.form-control{
+    border:0;
+    background: #FFF;
+    padding: 10px;
+}
+.form-control:focus {
+    border-color: none;
+    outline: 0;
+    box-shadow: none;
+}
+select.form-control
+{
+    height: 30px;
+    padding: 0 10px;
+}
+textarea.form-control{
+    resize: none;
+    height: 100px;
+}
+label{
+    font-size: 1.8em;
+    font-weight: 600;
+    color:#555;
+    margin :10px 0 ;
+}
